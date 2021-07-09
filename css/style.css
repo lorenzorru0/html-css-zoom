@@ -4,3 +4,41 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Commons */
+body {
+    background-color: #1a1a1a;
+    font-size: 10px;
+}
+.flex {
+    display: flex;
+}
+
+/* Top section */
+.top-section {
+    height: 40px;
+    justify-content: space-between;
+    padding: 5px;
+}
+.top-left-section, .top-right-section {
+    align-items: center;
+    color: #fff;
+}
+.top-left-section .fa-shield-alt {
+    background-color: #111212;
+    color: #23d959;
+    padding: 5px;
+    border-radius: 5px;
+}
+.top-left-section > div,  .top-right-section{
+    background-color: #111212;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.top-left-section .fa-record-vinyl {
+    color: red;
+}
+.top-right-section {
+    background-color: #212122;
+}
