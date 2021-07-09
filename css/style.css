@@ -7,7 +7,6 @@
 
 /* Commons */
 body {
-    background-color: #1a1a1a;
     font-size: 10px;
 }
 .flex {
@@ -27,6 +26,7 @@ body {
     height: 40px;
     justify-content: space-between;
     padding: 5px;
+    background-color: #1a1a1a;
 }
 .top-left-section, .top-right-section {
     align-items: center;
@@ -54,6 +54,7 @@ body {
 /* Main page */
 main {
     height: calc(100vh - 90px);
+    background-color: #1a1a1a;
 }
 main .w-80 {
     flex-wrap: wrap;
@@ -117,9 +118,51 @@ main .w-80 {
     justify-content: flex-end;
 }
 
+/* Bottom section */
+.bottom-section {
+    height: 50px;
+    background-color: #252729;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaabac;
+    text-align: center;
+}
+.btn-classic {
+    padding: 10px 15px;
+    margin: 0px 5px;
+    position: relative;
+}
+.btn-classic > i {
+    font-size: 20px;
+}
+.arrow-up {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    font-size: 8px;
+}
+.number {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.share-screen {
+    color: #23d959;
+}
+.right-sec button {
+    border: none;
+    background-color: #e02828;
+    color: #fff;
+    margin-right: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
 /* Effetti hover */
 .change-page:hover {
     background-color: rgba(71, 71, 71, 0.8);
     border: 1px solid black;
     color: #2db9ff;
 }
+
