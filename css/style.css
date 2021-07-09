@@ -17,7 +17,6 @@ body {
 /* Width */
 .w-10 {
     width: 10%;
-    background-color: rosybrown;
 }
 .w-80 {
     width: 80%;
@@ -60,11 +59,13 @@ main .w-80 {
     flex-wrap: wrap;
 }
 .person {
+    position: relative;
     width: calc((100% - 36px) / 5);
     height: calc((100% - 36px) / 5);
     margin-right: 6px;
     margin-bottom: 6px;
-    background-color: red;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .person:nth-child(5n + 1) {
     margin-left: 6px;
@@ -83,4 +84,42 @@ main .w-80 {
 }
 .mister {
     border: 2px solid yellow;
+}
+.name {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.3);
+    color: #fff;
+}
+.name > .fa-microphone-slash {
+    color: red;
+}
+.name > .fa-microphone {
+    color: rgb(0, 170, 0);
+}
+
+.change-page {
+    margin: 0px 10px;
+    align-self: center;
+    background-color: black;
+    color: #7e7e7e;
+    padding: 30px 20px 5px 20px;
+    text-align: center;
+}
+.change-page > i {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.change-page-right {
+    justify-content: flex-end;
+}
+
+/* Effetti hover */
+.change-page:hover {
+    background-color: rgba(71, 71, 71, 0.8);
+    border: 1px solid black;
+    color: #2db9ff;
 }
