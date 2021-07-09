@@ -14,6 +14,15 @@ body {
     display: flex;
 }
 
+/* Width */
+.w-10 {
+    width: 10%;
+    background-color: rosybrown;
+}
+.w-80 {
+    width: 80%;
+}
+
 /* Top section */
 .top-section {
     height: 40px;
@@ -41,4 +50,37 @@ body {
 }
 .top-right-section {
     background-color: #212122;
+}
+
+/* Main page */
+main {
+    height: calc(100vh - 90px);
+}
+main .w-80 {
+    flex-wrap: wrap;
+}
+.person {
+    width: calc((100% - 36px) / 5);
+    height: calc((100% - 36px) / 5);
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: red;
+}
+.person:nth-child(5n + 1) {
+    margin-left: 6px;
+}
+.person:nth-child(1),
+.person:nth-child(2),
+.person:nth-child(3),
+.person:nth-child(4),
+.person:nth-child(5) {
+    margin-top: 6px;
+}
+.person > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mister {
+    border: 2px solid yellow;
 }
