@@ -8,6 +8,7 @@
 /* Commons */
 body {
     font-size: 10px;
+    font-family: 'Lato', sans-serif;
 }
 .flex {
     display: flex;
@@ -105,7 +106,9 @@ main .w-80 {
 .change-page {
     margin: 0px 10px;
     align-self: center;
-    background-color: black;
+    background: rgb(35,35,35);
+    background: linear-gradient(180deg, rgba(35,35,35,1) 0%, rgba(4,4,4,1) 100%);
+    border: 1px solid black;
     color: #7e7e7e;
     padding: 30px 20px 5px 20px;
     text-align: center;
@@ -113,6 +116,7 @@ main .w-80 {
 .change-page > i {
     font-size: 50px;
     padding-bottom: 10px;
+    color: #2db9ff;
 }
 .change-page-right {
     justify-content: flex-end;
@@ -121,7 +125,8 @@ main .w-80 {
 /* Bottom section */
 .bottom-section {
     height: 50px;
-    background-color: #252729;
+    background: rgb(38,40,42);
+    background: linear-gradient(180deg, rgba(38,40,42,1) 0%, rgba(28,30,32,1) 100%);
     justify-content: space-between;
     align-items: center;
     color: #aaabac;
@@ -161,8 +166,12 @@ main .w-80 {
 
 /* Effetti hover */
 .change-page:hover {
-    background-color: rgba(71, 71, 71, 0.8);
-    border: 1px solid black;
-    color: #2db9ff;
+    background-color: #2db9ff;
+    color: #fff;
 }
-
+.change-page:hover .fa-caret-left {
+    color: #fff;
+}
+.change-page:hover .fa-caret-right {
+    color: #fff;
+}
